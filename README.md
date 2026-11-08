@@ -19,7 +19,16 @@ This repository contains SQL solutions and data manipulation queries performed o
 4. **Targeted Regional Salary Rollup**: Aggregated regional payroll while filtering specific states and bounding total expenditure between $100k and $200k.
 5. **Post-1995 Cohort Performance**: Analyzed average Q2 sales per region for staff onboarded after 1995.
 
-Task 2
+## Task 1
+1. Compute the tenure (years of service) of each employee and update the Yrs_service field with the tenure (Tenure is computed by current date minus date hired).
+2. Generate initial password by concatenating the following:
+- first 3 characters of last name, first 2 characters of first name, last 2 characters of city, and employee id
+- Update the password field with the concatenated value
+3. Display the concatenated first and last name (with space in the middle), city and the first quarter sale which has a value.
+4. Sum up the employee salary from each region except those coming from the states of New York (NY), California (CA), and Arkansas (AR). Display only the sums which are in the range of 100k to 200k.
+5. Compute the average quarter 2 sales per region for all employees hired after 1995.
+
+## Task 2
 1. Display the region and the lastnames of the salesmen in each region. Output the salemen’ last name side by side with the region. There should be 4 output rows on the basis of the 4 regions. Write the names in alphabetical order
 2. Count how many salesmen from each region averaged between 200k to 300k in sales
 3. Display the name, region and average sales of those who averaged between 200k to 300k in sales
