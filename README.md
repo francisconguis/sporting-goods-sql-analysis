@@ -27,11 +27,11 @@ Task 2
 5. Display the concatenated name of salesmen with the sum of their q1, q2, q3 sales(formatted) and their total years with the company. Include in the selection only those who had been with the company for 25 yrs and above.
 6. Count how many salesmen per region have consistent decreasing sales from q1 to q3
 7. Write the concatenated name of the salesman (firstname, lastname) and a remark beside it, the remark depending on the following conditions:
-7.1 For those with average sales of 500k and above, write ‘For promotion as regional head’
-7.2 For those with average sales of 200k to 499k, write ‘For promotion as state head’
-7.3 For those who have consistent increasing sales from q1 to q3 sales, write ‘For 100% bonus
-7.4 For those who has q2 higher than q1 but q3 lower than q2 and higher than q1, write ‘For 50% bonus’
-7.5 For those who has q2 higher than q1 but q3 lower than q1, write ‘For continued probation’
-7.6 For consistent decreasing sales, ‘For contract termination’
+  7.1 For those with average sales of 500k and above, write ‘For promotion as regional head’
+  7.2 For those with average sales of 200k to 499k, write ‘For promotion as state head’
+  7.3 For those who have consistent increasing sales from q1 to q3 sales, write ‘For 100% bonus
+  7.4 For those who has q2 higher than q1 but q3 lower than q2 and higher than q1, write ‘For 50% bonus’
+  7.5 For those who has q2 higher than q1 but q3 lower than q1, write ‘For continued probation’
+  7.6 For consistent decreasing sales, ‘For contract termination’
 8. Identify those who where hired from Oct to Dec starting year 2005 and adjust their salary by 10% (increase of 10% to their current salary).
 9. Count how many were hired each year from each region.
