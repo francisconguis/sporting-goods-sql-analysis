@@ -4,8 +4,8 @@ This repository contains SQL solutions and data manipulation queries performed o
 
 ## Repository Structure
 - `Sporting_Goods.csv` - Raw employee records and quarterly sales dataset
-- `solution1.sql` - Complete implementation script for Task 1 (Questions 1–5)
-- `solution2.sql` - Complete implementation script for Task 2 (Questions 1–9)
+- `01_employee_tenure_and_regional_payroll.sql` - Complete implementation script for Task 1 (Questions 1–5)
+- `02_sales_performance_and_tier_appraisal.sql` - Complete implementation script for Task 2 (Questions 1–9)
 
 ## Dataset Structure
 - **EmpID**: Employee ID
