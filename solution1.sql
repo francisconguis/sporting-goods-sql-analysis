@@ -1,10 +1,8 @@
--- 1. Compute the tenure (years of service) of each employee and update the Yrs_service field with the tenure (Tenure is computed by current date minus date hired).
+-- 1. Compute Tenure (Yrs_service)
 UPDATE sporting_goods
 SET Yrs_service = TIMESTAMPDIFF(YEAR, STR_TO_DATE(Date_hired, '%m/%d/%Y'), CURDATE());
 
-/* 2. Generate initial password by concatenating the following:
-- first 3 characters of last name, first 2 characters of first name, last 2 characters of city, and employee id
-- Update the password field with the concatenated value */
+-- 2. Generate Initial Password
 UPDATE sporting_goods
 SET Password = CONCAT(
     LEFT(`Last Name`, 3),
@@ -13,7 +11,7 @@ SET Password = CONCAT(
     EmpID
 );
 
--- 3. Display the concatenated first and last name (with space in the middle), city and the first quarter sale which has a value.
+-- 3. Display Full Name, City, and Qtr1 Sale (Non-zero / Valid)
 SELECT 
     CONCAT(`First Name`, ' ', `Last Name`) AS `Full Name`,
     City,
@@ -21,7 +19,7 @@ SELECT
 FROM sporting_goods
 WHERE Qtr1 IS NOT NULL AND Qtr1 > 0;
 
--- 4. Sum up the employee salary from each region except those coming from the states of New York (NY), California (CA), and Arkansas (AR). Display only the sums which are in the range of 100k to 200k.
+-- 4. Sum of Salaries per Region (Excluding NY, CA, AR; Range 100k–200k)
 SELECT 
     Region,
     SUM(Salary) AS Total_Salary
@@ -30,7 +28,7 @@ WHERE State NOT IN ('NY', 'CA', 'AR')
 GROUP BY Region
 HAVING SUM(Salary) BETWEEN 100000 AND 200000;
 
--- 5. Compute the average quarter 2 sales per region for all employees hired after 1995.
+-- 5. Average Quarter 2 Sales per Region (Hired After 1995)
 SELECT 
     Region,
     ROUND(AVG(Qtr2), 2) AS Avg_Qtr2_Sales
