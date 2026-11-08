@@ -12,13 +12,6 @@ This repository contains SQL solutions and data manipulation queries performed o
 * **Yrs_Service**: Calculated employee tenure
 * **Password**: System-generated initial credential
 
-## Tasks & Solutions
-1. **Tenure Computation**: Dynamically calculated service years from `Date_hired` against current system date.
-2. **Password Generation**: Automated string parsing concatenating substrings of employee names, cities, and ID numbers.
-3. **Sales Reporting**: Filtered active first-quarter sales along with full names and branch cities.
-4. **Targeted Regional Salary Rollup**: Aggregated regional payroll while filtering specific states and bounding total expenditure between $100k and $200k.
-5. **Post-1995 Cohort Performance**: Analyzed average Q2 sales per region for staff onboarded after 1995.
-
 ## Task 1
 1. Compute the tenure (years of service) of each employee and update the Yrs_service field with the tenure (Tenure is computed by current date minus date hired).
 2. Generate initial password by concatenating the following:
@@ -27,6 +20,13 @@ This repository contains SQL solutions and data manipulation queries performed o
 3. Display the concatenated first and last name (with space in the middle), city and the first quarter sale which has a value.
 4. Sum up the employee salary from each region except those coming from the states of New York (NY), California (CA), and Arkansas (AR). Display only the sums which are in the range of 100k to 200k.
 5. Compute the average quarter 2 sales per region for all employees hired after 1995.
+
+## Solutions 1
+1. **Tenure Computation**: Dynamically calculated service years from `Date_hired` against current system date.
+2. **Password Generation**: Automated string parsing concatenating substrings of employee names, cities, and ID numbers.
+3. **Sales Reporting**: Filtered active first-quarter sales along with full names and branch cities.
+4. **Targeted Regional Salary Rollup**: Aggregated regional payroll while filtering specific states and bounding total expenditure between $100k and $200k.
+5. **Post-1995 Cohort Performance**: Analyzed average Q2 sales per region for staff onboarded after 1995.
 
 ## Task 2
 1. Display the region and the lastnames of the salesmen in each region. Output the salemen’ last name side by side with the region. There should be 4 output rows on the basis of the 4 regions. Write the names in alphabetical order
@@ -44,3 +44,14 @@ This repository contains SQL solutions and data manipulation queries performed o
   7.6 For consistent decreasing sales, ‘For contract termination’.
 8. Identify those who where hired from Oct to Dec starting year 2005 and adjust their salary by 10% (increase of 10% to their current salary).
 9. Count how many were hired each year from each region.
+
+## Solutions 2 
+1. **Regional Salesmen Aggregation**: Grouped and alphabetized sales personnel surnames side-by-side per geographic region using `GROUP_CONCAT`.
+2. **Mid-Tier Sales Performance Headcount**: Quantified regional personnel achieving average quarterly sales between $200k and $300k.
+3. **Mid-Tier Sales Distribution Profiling**: Extracted names, territorial assignments, and computed average sales for representatives within the $200k to $300k range.
+4. **Quarter-over-Quarter Growth Candidacy**: Flagged performance nominees displaying positive quarter-over-quarter momentum from Q1 to Q2.
+5. **Senior Tenured Performance Audit**: Aggregated cumulative multi-quarter revenue with currency formatting for personnel with 25 or more years of service.
+6. **Consistent Downward Trend Analysis**: Evaluated consecutive quarterly contractions (Q1 > Q2 > Q3) to identify regional attrition risks.
+7. **Multi-Tier Performance Appraisal & Action Routing**: Formulated a conditional multi-tier evaluation system mapping average volume and trend trajectories to promotion, bonus, probation, or termination remarks.
+8. **Targeted Seasonal Compensation Adjustment**: Indexed and adjusted baseline compensation by 10% for fourth-quarter onboarding cohorts from 2005 onward.
+9. **Annual Regional Onboarding Distribution**: Generated a chronological breakdown auditing yearly talent acquisition volume across all operating regions.
