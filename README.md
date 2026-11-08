@@ -28,7 +28,7 @@ This repository contains SQL solutions and data manipulation queries performed o
 4. Sum up the employee salary from each region except those coming from the states of New York (NY), California (CA), and Arkansas (AR). Display only the sums which are in the range of 100k to 200k.
 5. Compute the average quarter 2 sales per region for all employees hired after 1995.
 
-### Solution Overview (`solution1.sql`)
+### Solution Overview (`01_employee_tenure_and_regional_payroll.sql`)
 1. **Tenure Computation**: Dynamically calculated service years from `Date_hired` against current system date.
 2. **Password Generation**: Automated string parsing concatenating substrings of employee names, cities, and ID numbers.
 3. **Sales Reporting**: Filtered active first-quarter sales along with full names and branch cities.
@@ -54,7 +54,7 @@ This repository contains SQL solutions and data manipulation queries performed o
 8. Identify those who where hired from Oct to Dec starting year 2005 and adjust their salary by 10% (increase of 10% to their current salary).
 9. Count how many were hired each year from each region.
 
-### Solution Overview (`solution2.sql`)
+### Solution Overview (`02_sales_performance_and_tier_appraisal.sql`)
 1. **Regional Salesmen Aggregation**: Grouped and alphabetized sales personnel surnames side-by-side per geographic region using `GROUP_CONCAT`.
 2. **Mid-Tier Sales Performance Headcount**: Quantified regional personnel achieving average quarterly sales between $200k and $300k.
 3. **Mid-Tier Sales Distribution Profiling**: Extracted names, territorial assignments, and computed average sales for representatives within the $200k to $300k range.
